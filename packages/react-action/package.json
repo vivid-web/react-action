@@ -1,0 +1,57 @@
+{
+	"name": "@vivid-web/react-action",
+	"version": "0.0.0",
+	"description": "A wrapper around React actions",
+	"author": "Peter van Meijgaard <petervanmeijgaard@gmail.com>",
+	"license": "MIT",
+	"keywords": [
+		"React",
+		"Server",
+		"Components",
+		"RSC",
+		"Action",
+		"Wrapper",
+		"Result"
+	],
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.mjs",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/cjs/index.js",
+			"import": "./dist/esm/index.mjs",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"scripts": {
+		"dev": "run-p dev:*",
+		"dev:js": "tsup --watch",
+		"dev:dts": "tsc --emitDeclarationOnly --rootDir src --outDir dist/types --watch",
+		"build": "run-p build:*",
+		"build:js": "tsup",
+		"build:dts": "tsc --emitDeclarationOnly --rootDir src --outDir dist/types",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/react": "npm:types-react@beta",
+		"@types/react-dom": "npm:types-react-dom@beta",
+		"esbuild-plugin-file-path-extensions": "^2.0.0",
+		"npm-run-all": "^4.1.5",
+		"react": "beta",
+		"react-dom": "beta",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5"
+	},
+	"peerDependencies": {
+		"react": "beta",
+		"react-dom": "beta"
+	},
+	"overrides": {
+		"@types/react": "npm:types-react@beta",
+		"@types/react-dom": "npm:types-react-dom@beta"
+	}
+}
