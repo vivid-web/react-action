@@ -90,9 +90,6 @@ importers:
       '@types/react':
         specifier: npm:types-react@beta
         version: /types-react@19.0.0-beta.1
-      '@types/react-dom':
-        specifier: npm:types-react-dom@beta
-        version: /types-react-dom@19.0.0-beta.1
       esbuild-plugin-file-path-extensions:
         specifier: ^2.0.0
         version: 2.0.0
@@ -102,9 +99,6 @@ importers:
       react:
         specifier: beta
         version: 19.0.0-beta-94eed63c49-20240425
-      react-dom:
-        specifier: beta
-        version: 19.0.0-beta-94eed63c49-20240425(react@19.0.0-beta-94eed63c49-20240425)
       tsup:
         specifier: ^8.0.2
         version: 8.0.2(typescript@5.4.5)
@@ -3724,6 +3718,7 @@ packages:
     dependencies:
       react: 19.0.0-beta-94eed63c49-20240425
       scheduler: 0.25.0-beta-94eed63c49-20240425
+    dev: false
 
   /react@19.0.0-beta-94eed63c49-20240425:
     resolution: {integrity: sha512-BPPKh5bZwcpw/Dgfh3A0MoU1GSl2edR2JggCq3QPdghQsrFg1aBuMkul5YB4rpII400RYq9VC5eF5Nm3spx0gA==}
@@ -3931,6 +3926,7 @@ packages:
 
   /scheduler@0.25.0-beta-94eed63c49-20240425:
     resolution: {integrity: sha512-U8hoOV7uut5E8cMvRSMikEBBqLXfv2BpdxUsG45euaOfnqEgFrCdLLh6ydM+YBJ36+28olXMNmK2PFFzeg4UdQ==}
+    dev: false
 
   /sembear@0.5.2:
     resolution: {integrity: sha512-Ij1vCAdFgWABd7zTg50Xw1/p0JgESNxuLlneEAsmBrKishA06ulTTL/SHGmNy2Zud7+rKrHTKNI6moJsn1ppAQ==}
