@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { error, ok, useAction } from "@vivid-web/react-action";
 import { wait } from "./lib/utils.ts";
-import { ComponentRef, FormEvent, useRef } from "react";
+import { FormEvent } from "react";
 import { Button } from "./components/Button.tsx";
 import "./index.css";
 
@@ -28,8 +28,6 @@ const myAction = async (data: FormData) => {
 };
 
 function App() {
-	const ref = useRef<ComponentRef<"form">>(null);
-
 	const [dispatch, isPending] = useAction(myAction, {
 		onError: (error) => {
 			return alert(`Action failed - ${error}`);
@@ -42,16 +40,13 @@ function App() {
 	const onSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		if (!ref.current) return;
-
-		dispatch(new FormData(ref.current));
+		dispatch(new FormData(event.target as HTMLFormElement));
 	};
 
 	return (
 		<form
 			action={myAction}
 			onSubmit={onSubmit}
-			ref={ref}
 			className="flex flex-1 flex-col gap-4 m-4"
 		>
 			<input
