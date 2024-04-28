@@ -40,7 +40,7 @@
 		"@types/react": "npm:types-react@beta",
 		"@types/react-dom": "npm:types-react-dom@beta",
 		"esbuild-plugin-file-path-extensions": "^2.0.0",
-		"npm-run-all2": "^5.0.0",
+		"npm-run-all2": "^6.1.2",
 		"react": "beta",
 		"react-dom": "beta",
 		"tsup": "^8.0.2",
