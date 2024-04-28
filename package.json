@@ -1,0 +1,22 @@
+{
+	"name": "react-action",
+	"private": "true",
+	"description": "The monorepo for React Action",
+	"keywords": [],
+	"author": "Peter van Meijgaard <petervanmeijgaard@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"build": "turbo build",
+		"typecheck": "turbo typecheck",
+		"dev": "turbo dev",
+		"format": "prettier --check --cache .",
+		"postinstall": "manypkg check"
+	},
+	"dependencies": {
+		"@manypkg/cli": "^0.21.4",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5",
+		"turbo": "^1.13.2"
+	}
+}

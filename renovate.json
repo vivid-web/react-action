@@ -1,0 +1,8 @@
+{
+	"extends": ["config:base", ":dependencyDashboard"],
+	"rangeStrategy": "bump",
+	"lockFileMaintenance": {
+		"enabled": true
+	},
+	"labels": ["Dependencies"]
+}
