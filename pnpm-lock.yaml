@@ -91,8 +91,8 @@ importers:
         specifier: npm:types-react@beta
         version: /types-react@19.0.0-beta.1
       esbuild-plugin-file-path-extensions:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.1.3
+        version: 2.1.3
       npm-run-all2:
         specifier: ^6.1.2
         version: 6.1.2
@@ -2111,8 +2111,8 @@ packages:
       is-symbol: 1.0.4
     dev: false
 
-  /esbuild-plugin-file-path-extensions@2.0.0:
-    resolution: {integrity: sha512-VzVJhuegxLeg8VhsHmxRXtz1Kxf3QMQb1xIuKWivGHoOmZdU6O6xJ5iHhfCDyR+Vs+JE5GrvSpCsZ3GvaqlkUA==}
+  /esbuild-plugin-file-path-extensions@2.1.3:
+    resolution: {integrity: sha512-yLriKqLz32F0zGDqrfuTx8aENTVnf0l0HZ6qAgPhQpxFIcrZRNc4DfXjZs8pq0VPeBazzpb3WJ05B0S6s3ucSQ==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
     dev: true
 
