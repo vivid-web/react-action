@@ -39,7 +39,7 @@
 	"devDependencies": {
 		"@types/react": "npm:types-react@beta",
 		"esbuild-plugin-file-path-extensions": "^2.0.0",
-		"npm-run-all2": "^6.1.2",
+		"npm-run-all2": "^6.2.6",
 		"react": "beta",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.5"
